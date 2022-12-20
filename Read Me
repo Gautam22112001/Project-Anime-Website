@@ -1,0 +1,35 @@
+1. only the first card of the latest tag is functional as of now so please do click it and check.
+   also only the first episode will play as this being a sample website.
+
+2. absolute and reletive positioning(watch before image hover text video):- https://www.youtube.com/watch?v=VNoB0-lVE2g
+
+3. iage hover text:- https://www.youtube.com/watch?v=exb2ab72Xhs&t=11s
+
+4. Disable Text Selection Highlighting In HTML Using CSS:- (used in line 83 of hamburger.css)
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+VVVIP POINT
+5. ANIMATING FROM DISPLAY: BLOCK TO DISPLAY:NONE / how to add transition to display property:- https://www.impressivewebs.com/animate-display-block-none/
+
+
+6. .addEventListener options:-
+{ capture: <boolean>,
+   once: <boolean>,
+   passive: <boolean> }
+
+   they are explained here:-
+   a) a very brief article:- https://webreflection.co.uk/blog/2016/04/17/new-dom4-standards
+
+   b) on passive :-
+           1) https://www.youtube.com/watch?v=DJYpXxWqvmo (better).
+           2) https://www.youtube.com/watch?v=J06Uz7m-Jn8
+      essentially  what passive does is that whwnever an event listener is trigerred the browswer has to execute it but before executing the event the browser has to completely run the callBack function(.addEventListener('event', callBack function)) because there is a posibility that the event could be cancelled (by using e.preventDefault() function). Therefore there might be a slight delay before the event is executed as the call Back function has to finish running so to prevent this we use (passive: true) , which means that we are promising our browser that we have not cancelled our event anywhere in callBack function and the browser can directly fire the event without first completely running the callBack function.    
+   
+   c) on once and capture:- 
+      https://www.youtube.com/watch?v=XF1_MlZ5l6M

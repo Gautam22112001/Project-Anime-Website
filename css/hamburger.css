@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.navbar{
+    display: none;
+}
+
+/* NAVBAR-hamburgerNavItems */
+
+.hamburgerNavbar{
+    display: flex;   
+    /* border: 2px solid black; */
+    position: relative;
+}
+
+.hamburgerNavbar::before{
+    content: "";
+    position: absolute;
+    height:50px ;
+    width: 100%;
+    background-color: #000000;
+    opacity: 1;
+    z-index: -1;
+}
+
+.websiteLogo{
+     width: 100px;
+    height: 50px;
+      /* border: 2px solid red; */
+}
+
+.websiteLogo > img{
+    width: 100px;
+    height: 50px;
+}
+
+#hamburgerNavItems{
+     /* border: 2px solid green; */
+     position: absolute;
+     top: 0;
+     right: 47px;
+    /* transform: translateX(100px); */
+    transition: 0.45s;
+     z-index: 1000000000000000000000;
+     display: block;
+}
+
+#hamburgerNavItems::before{
+    content: "";
+    position: absolute;
+    height: 278.8px;
+    width: 192px ;
+    /* width: 13vw ; */
+    background-color: #000000;
+    opacity: 1;
+    z-index: -1;
+}
+
+.hamburgerLogo , .hamburgerLogoBack{
+    width: 27px;
+    height: 42px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 100000000000000000000000000000000;
+}
+
+.hamburgerLogo > p , .hamburgerLogoBack > p{
+    /*to understand the below part of code see point 4 of Read Me file*/
+    margin: 0;
+    padding: 0;
+    line-height: 10px;
+    font-weight: 900;
+    font-size: 30px;
+
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+}
+
+#hamburgerLogo > p:hover , #hamburgerLogoBack > p:hover{
+    cursor: pointer;
+}
+
+#hamburgerNavItems ul{
+    list-style: none;
+    padding: 5px;
+}
+
+#hamburgerNavItems ul li{
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+
+#hamburgerNavItems ul li a{
+    text-decoration: none;
+    padding: 5px;
+    color: #ffffff;
+}
+
+
+#hamburgerNavItems li a:hover,
+#hamburgerNavItems ul li a:active{
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 7px;
+    color: black;
+}
+
+.visuallyHidden{
+    opacity: 0;
+}
+
+.hidden{
+    display: none;
+}
